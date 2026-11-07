@@ -1,148 +1,288 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Privacy Policy - Taqwim</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Privacy Policy for the Taqwim calendar app.">
+  <meta name="theme-color" content="#f5f7f2">
+  <title>Privacy Policy | Taqwim</title>
   <style>
     :root {
-      --bg: #f8fafc;
-      --card: #ffffff;
-      --text: #1e293b;
-      --muted: #64748b;
-      --border: #e2e8f0;
-      --primary: #0f766e;
+      color-scheme: light;
+      --ink: #1d2b24;
+      --muted: #596a60;
+      --green: #245c43;
+      --line: #dce5dc;
+      --paper: #fff;
+      --wash: #f5f7f2;
+      --accent: #e9f1e9;
     }
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
+
+    * { box-sizing: border-box; }
+
     body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-      background-color: var(--bg);
-      color: var(--text);
-      line-height: 1.6;
-      padding: 40px 20px;
+      margin: 0;
+      background: var(--wash);
+      color: var(--ink);
+      font: 16px/1.7 system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
     }
-    .container {
-      max-width: 760px;
-      margin: 0 auto;
-      background: var(--card);
-      border: 1px solid var(--border);
-      border-radius: 12px;
-      padding: 36px 32px;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+
+    a { color: var(--green); }
+
+    .page {
+      width: min(100% - 32px, 820px);
+      margin: 48px auto;
     }
+
     header {
-      border-bottom: 1px solid var(--border);
-      padding-bottom: 20px;
-      margin-bottom: 24px;
+      padding: 38px clamp(24px, 6vw, 56px);
+      border-radius: 20px 20px 0 0;
+      background: var(--green);
+      color: #fff;
     }
+
+    .brand {
+      margin: 0 0 8px;
+      color: #d7e9d8;
+      font-size: .9rem;
+      font-weight: 700;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+    }
+
     h1 {
-      font-size: 1.75rem;
-      color: var(--primary);
-      margin-bottom: 6px;
+      margin: 0;
+      font-size: clamp(2rem, 6vw, 3rem);
+      line-height: 1.15;
     }
-    .date {
-      font-size: 0.875rem;
+
+    .updated {
+      margin: 14px 0 0;
+      color: #e1ece3;
+      font-size: .95rem;
+    }
+
+    main {
+      padding: 12px clamp(24px, 6vw, 56px) 40px;
+      border: 1px solid var(--line);
+      border-top: 0;
+      border-radius: 0 0 20px 20px;
+      background: var(--paper);
+      box-shadow: 0 16px 42px #203a2810;
+    }
+
+    .intro {
+      margin: 0;
+      padding: 26px 0 18px;
       color: var(--muted);
+      font-size: 1.05rem;
     }
+
+    section {
+      padding: 20px 0;
+      border-top: 1px solid var(--line);
+    }
+
     h2 {
+      margin: 0 0 8px;
+      color: var(--green);
       font-size: 1.2rem;
-      margin-top: 24px;
-      margin-bottom: 10px;
-      color: #0f172a;
+      line-height: 1.4;
     }
-    p {
-      margin-bottom: 14px;
+
+    p { margin: 8px 0; }
+    ul { margin: 8px 0; padding-left: 1.35rem; }
+    li { margin: 6px 0; }
+
+    .callout {
+      margin: 14px 0 4px;
+      padding: 14px 16px;
+      border-radius: 12px;
+      background: var(--accent);
+      color: var(--ink);
     }
-    ul {
-      margin-left: 20px;
-      margin-bottom: 16px;
-    }
-    li {
-      margin-bottom: 8px;
-    }
-    strong {
-      color: #0f172a;
-    }
+
     footer {
-      margin-top: 32px;
-      padding-top: 18px;
-      border-top: 1px solid var(--border);
-      font-size: 0.875rem;
+      padding: 20px 4px 0;
       color: var(--muted);
+      text-align: center;
+      font-size: .9rem;
     }
-    a {
-      color: var(--primary);
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
+
+    @media (max-width: 520px) {
+      .page { width: min(100% - 20px, 820px); margin: 20px auto; }
+      header { padding-top: 30px; padding-bottom: 30px; }
+      main { padding-bottom: 28px; }
     }
   </style>
 </head>
 <body>
-
-  <div class="container">
+  <div class="page">
     <header>
-      <h1>Privacy Policy for Taqwim</h1>
-      <p class="date">Last updated: November 2026</p>
+      <p class="brand">Taqwim</p>
+      <h1>Privacy Policy</h1>
+      <p class="updated">Effective date: November 7, 2026</p>
     </header>
 
     <main>
-      <p>
-        <strong>Taqwim</strong> is designed as a standalone utility offering comprehensive calendar conversions (Hijri Shamsi, Hijri Qamari, and Gregorian), standard event tracking, prayer times, Qibla compass calculations, home screen widgets, and date management tools.
+      <p class="intro">
+        This policy explains how the Taqwim mobile application handles information.
+        Taqwim provides calendar dates and conversions, prayer times, Qibla direction,
+        reminders, calendar events, and related tools.
       </p>
 
-      <h2>1. Information Handling & On-Device Storage</h2>
-      <p>Your privacy is respected by default. Taqwim does not collect, harvest, track, or share your personal data:</p>
-      <ul>
-        <li><strong>Saved Dates & Notes:</strong> Any date notes, reminders, or saved events you create are saved strictly inside your phone's local database. They are never transmitted off your device.</li>
-        <li><strong>Date Conversions & Calculations:</strong> Tools including date conversion, date differences, and age calculation run entirely on-device using standard mathematical and astronomical calendar formulas.</li>
-        <li><strong>Widgets:</strong> Home screen widgets read their display data directly from your device's local storage and settings without external network interaction.</li>
-      </ul>
+      <section>
+        <h2>Information stored on your device</h2>
+        <p>
+          Saved dates, notes, app preferences, selected calendar and country, and
+          notification settings are stored locally on your device. GPS coordinates
+          that you choose to use are also saved locally so Taqwim can calculate
+          location-based prayer times and Qibla direction and update related widgets.
+          Taqwim does not send your saved dates, notes, or GPS coordinates to its
+          servers.
+        </p>
+        <p>
+          You can use the app's calendar backup and restore features to export or
+          import calendar data in an ICS file. Exporting is initiated by you and
+          uses your device's sharing features; the privacy practices of any app or
+          service you choose to share the file with apply.
+        </p>
+      </section>
 
-      <h2>2. Device Permissions & Sensor Use</h2>
-      <p>To enable specific utility features, Taqwim requires certain local permissions:</p>
-      <ul>
-        <li><strong>Location:</strong> Used strictly in real-time to compute precise prayer times and Qibla direction based on standard astronomical coordinates. Your location is processed on-device and is never logged, stored, or sent to any remote server.</li>
-        <li><strong>Sensors (Compass/Magnetometer):</strong> Used solely to orient the Qibla compass pointer toward the Kaaba in real-time.</li>
-        <li><strong>Notifications:</strong> Used exclusively to deliver scheduled event reminders and prayer alerts locally on your phone.</li>
-      </ul>
+      <section>
+        <h2>Location permission</h2>
+        <p>
+          Location access is optional. If you select GPS-based location, the app
+          requests your device's location to calculate prayer times and Qibla
+          direction. The calculation is performed in the app, and the coordinates
+          are stored on your device. You can instead select a location manually,
+          deny permission, or revoke it at any time in your device settings.
+        </p>
+      </section>
 
-      <h2>3. Cloud Services & App Content</h2>
-      <p>
-        Taqwim uses Google Firebase exclusively as a read-only distribution channel to maintain and update general calendar metadata (such as official UN international observances and local public events in Afghanistan and other supported regions).
-      </p>
-      <p>
-        No user-generated data, identity tokens, calendar notes, or personal identifiers are uploaded, synchronized, or stored on Firebase servers.
-      </p>
+      <section>
+        <h2>Feedback you choose to send</h2>
+        <p>
+          If you submit feedback or a suggestion in the app, Taqwim sends the
+          information you enter, which may include your name, email address or
+          phone number, and message. The submission also includes the selected
+          country and device platform. This information is sent to Google Firebase
+          Cloud Firestore and is used to review and respond to feedback and to
+          manage submissions.
+        </p>
+        <p>
+          Do not include sensitive personal information in feedback. You can
+          contact the developer to request access to or deletion of a feedback
+          submission.
+        </p>
+      </section>
 
-      <h2>4. Third-Party Access</h2>
-      <p>
-        Taqwim does not sell, rent, trade, or share user data with third-party advertising networks, data brokers, or analytics platforms.
-      </p>
+      <section>
+        <h2>Crash reports and diagnostics</h2>
+        <p>
+          In released versions, Taqwim uses Firebase Crashlytics to receive crash
+          reports and error diagnostics. These may include error details and
+          technical information such as app version, device model, operating
+          system, and identifiers generated by the service. They help diagnose
+          problems and improve app stability. Crash reporting is not used to
+          create advertising profiles.
+        </p>
+      </section>
 
-      <h2>5. Data Deletion</h2>
-      <p>
-        Because all personal records and preferences exist solely within your phone's local storage, you can immediately delete all associated data at any time by clearing the application cache/storage in your device settings or by uninstalling the application.
-      </p>
+      <section>
+        <h2>Push notifications and online content</h2>
+        <p>
+          If notifications are enabled, Taqwim uses Firebase Cloud Messaging to
+          deliver announcements and other app notifications. Firebase may process
+          a push notification token and the country topic selected in the app to
+          route relevant notifications. You can disable notifications in your
+          device settings.
+        </p>
+        <p>
+          The app may connect to Firebase services to retrieve app configuration,
+          event and holiday information, announcements, and daily content. When
+          using these online services, Google may receive technical connection
+          information, such as an IP address, as described in
+          <a href="https://policies.google.com/privacy">Google's Privacy Policy</a>
+          and the
+          <a href="https://firebase.google.com/support/privacy">Firebase privacy documentation</a>.
+        </p>
+      </section>
 
-      <h2>6. Contact</h2>
-      <p>
-        If you have any questions or feedback regarding this policy or the application, please reach out via email:
-      </p>
-      <p>
-        <a href="mailto:mohammad.ozair.cs@gmail.com">mohammad.ozair.cs@gmail.com</a>
-      </p>
+      <section>
+        <h2>How information is used and shared</h2>
+        <p>
+          Taqwim does not sell personal information or use it for third-party
+          advertising. Information described above is used to provide app features,
+          process feedback, deliver notifications, and diagnose errors. Google
+          Firebase processes relevant information on the app's behalf under its
+          applicable terms and privacy practices. We do not otherwise share
+          information you provide with third parties, except where required by law
+          or necessary to protect the service and its users.
+        </p>
+      </section>
+
+      <section>
+        <h2>Retention and your choices</h2>
+        <ul>
+          <li>
+            Locally stored information remains on your device until you delete it,
+            clear the app's data, or uninstall the app.
+          </li>
+          <li>
+            Feedback is retained by the app operator for as long as needed to
+            review and respond to it, and to maintain necessary records.
+          </li>
+          <li>
+            Crash reports and push-notification data are handled according to the
+            applicable Firebase service retention practices.
+          </li>
+          <li>
+            You may deny or revoke location and notification permissions through
+            your device settings. Some features may then be unavailable.
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Children's privacy</h2>
+        <p>
+          Taqwim does not knowingly ask children to provide personal information.
+          If you believe a child has sent personal information through the app,
+          contact the developer so the submission can be reviewed and deleted.
+        </p>
+      </section>
+
+      <section>
+        <h2>Security and international processing</h2>
+        <p>
+          We use the app's local storage and Firebase services for the purposes
+          described in this policy. Information handled by Firebase may be
+          processed in countries where Google or its service providers operate.
+          No method of storage or transmission is completely secure.
+        </p>
+      </section>
+
+      <section>
+        <h2>Changes to this policy</h2>
+        <p>
+          This policy may be updated when the app or its data practices change.
+          The current version and effective date will be published on this page.
+        </p>
+      </section>
+
+      <section>
+        <h2>Contact</h2>
+        <div class="callout">
+          <p>
+            For privacy questions or requests concerning information you submitted
+            through Taqwim, contact the developer using the contact email shown on
+            the Taqwim Google Play listing.
+          </p>
+        </div>
+      </section>
     </main>
-
-    <footer>
-      &copy; 2026 Taqwim. All rights reserved.
-    </footer>
+    <footer>© Taqwim</footer>
   </div>
-
 </body>
 </html>
